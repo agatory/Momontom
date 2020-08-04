@@ -12,6 +12,7 @@ h6,
 h4,
 h1 {
   color: #ffffff;
+  align-items: center;
 }
 
 .clicked {
@@ -21,10 +22,12 @@ h1 {
 .form,
 .greetings {
   display: none;
+  align-items: center;
 }
 
 .showing {
   display: block;
+  align-items: center;
 }
 
 @keyframes fadeIn {
