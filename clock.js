@@ -8,7 +8,7 @@ function getTime() {
   const seconds = date.getSeconds();
   clocktTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${
     minutes < 10 ? `0${minutes}` : minutes
-  }:${seconds < 9 ? `0${seconds}` : seconds}`;
+  }:${seconds < 10 ? `0${seconds}` : seconds}`;
 }
 function init() {
   getTime();
