@@ -21,6 +21,7 @@ function askForName() {
 }
 
 function paintGreeting(text) {
+  const delBtn = document.createElement("button");
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
   greeting.innerText = `Hello ${text}`;

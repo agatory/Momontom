@@ -6,13 +6,15 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 50px 0px;
+  size: 5;
 }
 
 h6,
 h4,
 h1 {
   color: #ffffff;
-  align-items: center;
+  font-size: 3em;
+  /* align-items: center; */
 }
 
 .clicked {
@@ -22,12 +24,12 @@ h1 {
 .form,
 .greetings {
   display: none;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .showing {
   display: block;
-  align-items: center;
+  /* align-items: center; */
 }
 
 @keyframes fadeIn {
@@ -44,6 +46,27 @@ h1 {
   left: 0;
   width: 100;
   height: 100;
+  background-size: contain;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+.js-input::placeholder {
+  color: white;
+  text-align: center;
+}
+.js-input {
+  border: none;
+  background: transparent;
+  color: white;
+  width: 100%;
+  height: 30px;
+  font-size: 2em;
+}
+.js-toDoList {
+  font-size: 3;
+  color: #ffffff;
+}
+.js-weather,
+.js-greetings {
+  font-size: 3em;
 }
