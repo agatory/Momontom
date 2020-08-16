@@ -25,10 +25,6 @@ function saveToDos() {
   localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
 }
 
-function saveToDos() {
-  localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
-}
-
 function paintToDo(text) {
   const li = document.createElement("li");
   const delBtn = document.createElement("button");
@@ -59,6 +55,7 @@ function handleSubmit(event) {
   paintToDo(currentValue);
   toDoInput.value = "";
 }
+
 function loadToDos() {
   const loadedToDos = localStorage.getItem(TODOS_LS);
   if (loadedToDos !== null) {
